@@ -1,0 +1,90 @@
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+a= np.linspace(0,5,10)
+b=a**3
+
+#print(a)
+#print(b)
+
+#print(plt.plot(a,b))
+#print(plt.xlabel('a array'))
+#print(plt.ylabel('b array'))
+#print(plt.title('Plot for a and b arrays'))
+
+
+
+#print(plt.subplot(1,2,1))
+#print(plt.plot(a,b,'r'))
+#print(plt.subplot(1,2,2))
+#print(plt.plot(b,a,'b'))
+
+
+
+figure=plt.figure()
+axes=figure.add_axes([0.1,0.1,0.8,0.8])
+axes.plot(a,b)
+axes.set_xlabel('a array value')
+axes.set_ylabel('b array value')
+axes.set_title('Some title')
+axes.plot(a,b)
+#print(axes.plot(a,b))
+#print(plt.figure())
+
+
+
+figure1=plt.figure()
+axes1=figure1.add_axes([0.1,0.1,0.8,0.8])
+axes2=figure1.add_axes([0.3,0.6,0.5,0.4])
+#print(axes1)
+#print(axes2)
+
+
+figure2=plt.figure()
+axes3=figure2.add_axes([0.0,0.0,1,1])
+axes4=figure2.add_axes([0.3,0.6,0.5,0.4])
+#print(axes3)
+#print(axes4)
+
+
+figure3=plt.figure()
+axes5=figure3.add_axes([0.0,0.0,1,1])
+axes6=figure3.add_axes([0.5,0.6,0.6,0.0])
+#print(axes5)
+#print(axes6)
+
+
+figure4=plt.figure()
+axes7=figure4.add_axes([0.0,0.0,1,1])
+axes8=figure4.add_axes([0.5,0.0,0.5,0.4])
+#print(axes7)
+#print(axes8)
+
+
+
+#figure5=plt.figure()
+#axes9=figure5.add_axes([0.0,0.0,1,1])
+#axes10=figure5.add_axes([0.2,0.3,0.5,0.4])
+#print(axes9)
+#print(axes10)
+#axes9.plot(a,b)
+#axes10.plot(b,a)
+
+
+
+figure6=plt.figure()
+axes10=figure6.add_axes([0.0,0.0,1,1])
+axes11=figure6.add_axes([0.1,0.4,0.5,0.4])
+print(axes10)
+print(axes11)
+axes10.plot(a,b)
+axes11.plot(b,a)
+
+axes10.set_xlabel('a array value')
+axes10.set_ylabel('b array value')
+axes10.set_title('Axes10 title')
+
+axes11.set_xlabel('b array value')
+axes11.set_ylabel('a array value')
+axes11.set_title('Axes11 title')
